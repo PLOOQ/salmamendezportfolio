@@ -1,28 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Salma Mendez</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1>Hola! Mi nombre es Salma Mendez y este es mi portafolio</h1>
-    <h3>
-      Aquí encotrarás un repositorio de mis proyectos mas destacados en el área
-      de Data Analytics; desde el análisis de los tiempos de cruce de los
-      puentes internacionales hasta cuáles son los productos mas vendidos con
-      pan blanco.
-    </h3>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold">My Portfolio</div>
+        <div>
+          <a href="#home" class="text-gray-700 px-4">Home</a>
+          <a href="#about" class="text-gray-700 px-4">About</a>
+          <a href="#experience" class="text-gray-700 px-4">Experience</a>
+          <a href="#contact" class="text-gray-700 px-4">Contact Info</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sections -->
+    <div
+      id="home"
+      class="container mx-auto px-4 py-20 flex items-center justify-center bg-white shadow-md rounded-lg mt-8"
+    >
+      <div class="w-1/2 flex justify-center">
+        <img
+          src="/assets/salma.jpg"
+          alt="Profile Picture"
+          class="w-48 h-48 rounded-full border-4 border-gray-300 shadow-lg"
+        />
+      </div>
+      <div class="w-1/2 text-center">
+        <h1 class="text-4xl font-bold mb-2">Salma Mendez</h1>
+        <p class="text-xl text-gray-700 mb-2">
+          Data Scientist and Economics Major
+        </p>
+        <p class="text-gray-600 italic">
+          A motivated and driven individual, dedicated to achieving goals and
+          excelling in her career.
+        </p>
+      </div>
+    </div>
+
+    <div
+      id="about"
+      class="container mx-auto px-4 py-20 text-center bg-white shadow-md"
+    >
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-700">A brief description about myself.</p>
+    </div>
+
+    <div id="experience" class="container mx-auto px-4 py-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">Experience</h2>
+      <p class="text-gray-700">Details of my professional experience.</p>
+    </div>
+
+    <div
+      id="contact"
+      class="container mx-auto px-4 py-20 text-center bg-white shadow-md"
+    >
+      <h2 class="text-3xl font-bold mb-4">Contact Info</h2>
+      <p class="text-gray-700">How to get in touch with me.</p>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
