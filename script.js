@@ -1,19 +1,10 @@
-// script.js
-
-// Function to scroll to the top of the page
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+// Function to toggle mobile menu visibility
+function toggleMobileMenu() {
+  const mobileMenu = document.getElementById("mobileMenu");
+  mobileMenu.classList.toggle("hidden");
 }
 
-// Show/hide scroll to top button based on scroll position
-window.addEventListener("scroll", function () {
-  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-  if (window.scrollY > 300) {
-    scrollToTopBtn.classList.remove("hidden");
-  } else {
-    scrollToTopBtn.classList.add("hidden");
-  }
-});
+// Function to scroll to top
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}

@@ -17,37 +17,46 @@
         class="container mx-auto px-4 py-4 flex justify-between items-center"
       >
         <div class="text-2xl font-bold">My Portfolio</div>
-        <div>
-          <a
-            href="#home"
-            class="inline-block px-4 py-2 text-gray-700 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out rounded-lg"
-            >Home</a
+        <div class="hidden md:flex space-x-4">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#qualifications" class="nav-link">Qualifications</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact Info</a>
+        </div>
+        <button
+          onclick="toggleMobileMenu()"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-          <a
-            href="#qualifications"
-            class="inline-block px-4 py-2 text-gray-700 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out rounded-lg"
-            >Qualifications</a
-          >
-          <a
-            href="#skills"
-            class="inline-block px-4 py-2 text-gray-700 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out rounded-lg"
-            >Skills</a
-          >
-          <a
-            href="#about"
-            class="inline-block px-4 py-2 text-gray-700 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out rounded-lg"
-            >About</a
-          >
-          <a
-            href="#experience"
-            class="inline-block px-4 py-2 text-gray-700 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out rounded-lg"
-            >Experience</a
-          >
-          <a
-            href="#contact"
-            class="inline-block px-4 py-2 text-gray-700 hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out rounded-lg"
-            >Contact Info</a
-          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu (hidden by default) -->
+      <div
+        id="mobileMenu"
+        class="md:hidden bg-white absolute top-0 left-0 right-0 mt-16 shadow-lg rounded-lg hidden"
+      >
+        <div class="flex flex-col items-center py-4 space-y-2">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#qualifications" class="nav-link">Qualifications</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact Info</a>
         </div>
       </div>
     </nav>
@@ -55,16 +64,16 @@
     <!-- Home Section -->
     <div
       id="home"
-      class="container mx-auto px-4 py-20 flex items-center justify-center bg-white shadow-md rounded-lg mt-8"
+      class="container mx-auto px-4 py-20 md:flex items-center justify-center bg-white shadow-md rounded-lg mt-8"
     >
-      <div class="w-1/2 flex justify-center">
+      <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
         <img
           src="/assets/salma.jpg"
           alt="Profile Picture"
           class="w-48 h-48 rounded-full border-4 border-gray-300 shadow-lg"
         />
       </div>
-      <div class="w-1/2 text-center">
+      <div class="md:w-1/2 text-center">
         <h1 class="text-4xl font-bold mb-2">Salma Mendez</h1>
         <p class="text-xl text-gray-700 mb-2">
           Data Scientist and Economics Major
@@ -85,7 +94,6 @@
       <p class="text-gray-700">
         List of qualifications, skills, certifications, and achievements.
       </p>
-      <!-- Replace with actual qualifications, skills, certifications, etc. -->
     </div>
 
     <!-- Skills Section -->
@@ -94,14 +102,15 @@
       class="container mx-auto px-4 py-20 text-center bg-white shadow-md rounded-lg mt-8"
     >
       <h2 class="text-3xl font-bold mb-4">Skills</h2>
-      <div class="flex justify-center items-center">
-        <!-- Icon for R -->
-        <div class="mr-8">
+      <div
+        class="flex flex-wrap justify-center items-center space-x-4 md:space-x-8"
+      >
+        <!-- Replace with actual icons and text -->
+        <div class="skill-item">
           <img src="path/to/r-icon.png" alt="R Icon" class="w-12 h-12" />
           <p class="text-gray-700">R</p>
         </div>
-        <!-- Icon for Python -->
-        <div class="mr-8">
+        <div class="skill-item">
           <img
             src="path/to/python-icon.png"
             alt="Python Icon"
@@ -109,8 +118,7 @@
           />
           <p class="text-gray-700">Python</p>
         </div>
-        <!-- Icon for pandas -->
-        <div class="mr-8">
+        <div class="skill-item">
           <img
             src="path/to/pandas-icon.png"
             alt="pandas Icon"
@@ -118,8 +126,7 @@
           />
           <p class="text-gray-700">pandas</p>
         </div>
-        <!-- Icon for numpy -->
-        <div class="mr-8">
+        <div class="skill-item">
           <img
             src="path/to/numpy-icon.png"
             alt="numpy Icon"
@@ -127,8 +134,7 @@
           />
           <p class="text-gray-700">numpy</p>
         </div>
-        <!-- Icon for sci-kit learn -->
-        <div>
+        <div class="skill-item">
           <img
             src="path/to/scikit-learn-icon.png"
             alt="sci-kit learn Icon"
@@ -149,7 +155,10 @@
     </div>
 
     <!-- Experience Section -->
-    <div id="experience" class="container mx-auto px-4 py-20 text-center">
+    <div
+      id="experience"
+      class="container mx-auto px-4 py-20 text-center bg-white shadow-md rounded-lg mt-8"
+    >
       <h2 class="text-3xl font-bold mb-4">Experience</h2>
       <p class="text-gray-700">Details of my professional experience.</p>
     </div>
