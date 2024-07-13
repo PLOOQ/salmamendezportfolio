@@ -22,6 +22,7 @@
           <a href="#qualifications" class="text-gray-700 px-4"
             >Qualifications</a
           >
+          <a href="#skills" class="text-gray-700 px-4">Skills</a>
           <a href="#about" class="text-gray-700 px-4">About</a>
           <a href="#experience" class="text-gray-700 px-4">Experience</a>
           <a href="#contact" class="text-gray-700 px-4">Contact Info</a>
@@ -36,7 +37,7 @@
     >
       <div class="w-1/2 flex justify-center">
         <img
-          src="assets/salma.jpg"
+          src="/assets/salma.jpg"
           alt="Profile Picture"
           class="w-48 h-48 rounded-full border-4 border-gray-300 shadow-lg"
         />
@@ -65,6 +66,57 @@
       <!-- Replace with actual qualifications, skills, certifications, etc. -->
     </div>
 
+    <!-- Skills Section -->
+    <div
+      id="skills"
+      class="container mx-auto px-4 py-20 text-center bg-white shadow-md rounded-lg mt-8"
+    >
+      <h2 class="text-3xl font-bold mb-4">Skills</h2>
+      <div class="flex justify-center items-center">
+        <!-- Icon for R -->
+        <div class="mr-8">
+          <img src="path/to/r-icon.png" alt="R Icon" class="w-12 h-12" />
+          <p class="text-gray-700">R</p>
+        </div>
+        <!-- Icon for Python -->
+        <div class="mr-8">
+          <img
+            src="path/to/python-icon.png"
+            alt="Python Icon"
+            class="w-12 h-12"
+          />
+          <p class="text-gray-700">Python</p>
+        </div>
+        <!-- Icon for pandas -->
+        <div class="mr-8">
+          <img
+            src="path/to/pandas-icon.png"
+            alt="pandas Icon"
+            class="w-12 h-12"
+          />
+          <p class="text-gray-700">pandas</p>
+        </div>
+        <!-- Icon for numpy -->
+        <div class="mr-8">
+          <img
+            src="path/to/numpy-icon.png"
+            alt="numpy Icon"
+            class="w-12 h-12"
+          />
+          <p class="text-gray-700">numpy</p>
+        </div>
+        <!-- Icon for sci-kit learn -->
+        <div>
+          <img
+            src="path/to/scikit-learn-icon.png"
+            alt="sci-kit learn Icon"
+            class="w-12 h-12"
+          />
+          <p class="text-gray-700">sci-kit learn</p>
+        </div>
+      </div>
+    </div>
+
     <!-- About Me Section -->
     <div
       id="about"
@@ -88,6 +140,15 @@
       <h2 class="text-3xl font-bold mb-4">Contact Info</h2>
       <p class="text-gray-700">How to get in touch with me.</p>
     </div>
+
+    <!-- Scroll to Top Button -->
+    <button
+      onclick="scrollToTop()"
+      id="scrollToTopBtn"
+      class="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md shadow-md transition duration-300 ease-in-out hidden"
+    >
+      Scroll to Top
+    </button>
 
     <script src="script.js"></script>
   </body>
