@@ -1,4 +1,12 @@
-#home {
+html {
+  scroll-behavior: smooth;
+}
+
+section {
   height: 95vh;
+  width: 100%;
+}
+
+#home {
   background-image: url("./assets/home-background.jpg");
 }

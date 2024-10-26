@@ -64,7 +64,7 @@
     </nav>
 
     <!-- Home Section -->
-    <div id="home" class="">
+    <section id="home">
       <div class="container mx-auto text-center p-5">
         <img
           src="/assets/salma.jpg"
@@ -83,69 +83,55 @@
           excelling in her career.
         </p>
 
-        <a class="btn btn-primary" href="#qualifications"> Learn more </a>
-      </div>
-    </div>
-
-    <!-- Qualifications Section -->
-    <div
-      id="qualifications"
-      class="container mx-auto px-4 py-20 text-center bg-white shadow-md rounded-lg mt-8"
-    >
-      <h2 class="text-3xl font-bold mb-4">Skills & Qualifications</h2>
-      <p class="text-gray-700">
-        List of qualifications, skills, certifications, and achievements.
-      </p>
-    </div>
-
-    <!-- Skills Section -->
-    <div
-      id="skills"
-      class="container mx-auto px-4 py-20 text-center bg-white shadow-md rounded-lg mt-8"
-    >
-      <h2 class="text-3xl font-bold mb-4">Academic and Independent Projects</h2>
-      <div
-        class="flex flex-wrap justify-center items-center space-x-4 md:space-x-8"
-      >
-        <!-- Replace with actual icons and text -->
-        <div class="skill-item">
-          <img src="path/to/r-icon.png" alt="R Icon" class="w-12 h-12" />
-          <p class="text-gray-700">R</p>
-        </div>
-        <div class="skill-item">
-          <img
-            src="path/to/python-icon.png"
-            alt="Python Icon"
-            class="w-12 h-12"
-          />
-          <p class="text-gray-700">Python</p>
-        </div>
-        <div class="skill-item">
-          <img
-            src="path/to/pandas-icon.png"
-            alt="pandas Icon"
-            class="w-12 h-12"
-          />
-          <p class="text-gray-700">pandas</p>
-        </div>
-        <div class="skill-item">
-          <img
-            src="path/to/numpy-icon.png"
-            alt="numpy Icon"
-            class="w-12 h-12"
-          />
-          <p class="text-gray-700">numpy</p>
-        </div>
-        <div class="skill-item">
-          <img
-            src="path/to/scikit-learn-icon.png"
-            alt="sci-kit learn Icon"
-            class="w-12 h-12"
-          />
-          <p class="text-gray-700">sci-kit learn</p>
+        <div class="m-2">
+          <a class="bg-blue p-3 border" href="#resume"> Learn more </a>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="text-center mx-auto">
+      <div class="flex flex-col md:flex-row gap-4">
+        <!-- Skills Column -->
+        <div id="skills" class="border p-6 flex-1">
+          <h2 class="text-3xl font-bold mb-4">Skills & Qualifications</h2>
+
+          <ul
+            class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+          >
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img
+                  class="h-16 w-16 rounded-full"
+                  src="/assets/python-logo.png"
+                  alt=""
+                />
+                <div>
+                  <h3
+                    class="text-base font-semibold leading-7 tracking-tight text-indigo-600"
+                  >
+                    Python
+                  </h3>
+                  <p class="text-sm font-semibold leading-6 text-gray-900">
+                    NumPy, Pandas, scikit-learn.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Projects Column -->
+        <div id="projects" class="border p-6 flex-1">
+          <h2 class="text-3xl font-bold mb-4">
+            Academic and Independent Projects
+          </h2>
+          <p class="text-gray-700">
+            List of qualifications, skills, certifications, and achievements.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- About Me Section -->
     <div
