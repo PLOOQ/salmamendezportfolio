@@ -12,14 +12,14 @@
   </head>
   <body class="bg-gray-100">
     <!-- Navbar -->
-    <nav class="bg-white shadow-md">
+    <nav class="sticky top-0 bg-white shadow-md">
       <div
         class="container mx-auto px-4 py-4 flex justify-between items-center"
       >
         <div class="text-2xl font-bold">My Portfolio</div>
         <div class="hidden md:flex space-x-4">
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#qualifications" class="nav-link">Skills & Qualifications</a>
+          <a href="#" class="nav-link">Home</a>
+          <a href="#resume" class="nav-link">Skills & Qualifications</a>
           <a href="#qualifications" class="nav-link"
             >Academic and Independent Projects</a
           >
@@ -90,17 +90,15 @@
     </section>
 
     <!-- Resume -->
-    <section id="resume" class="text-center mx-auto">
-      <div class="flex flex-col md:flex-row gap-4">
+    <section id="resume" class="text-center mx-auto p-5">
+      <div class="flex flex-col md:flex-row gap-4 p-5">
         <!-- Skills Column -->
         <div id="skills" class="border p-6 flex-1">
           <h2 class="text-3xl font-bold mb-4">Skills & Qualifications</h2>
 
-          <ul
-            class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
-          >
+          <ul class="grid gap-8 sm:grid-cols-2 xl:col-span-2">
             <li>
-              <div class="flex items-center gap-x-6">
+              <div class="flex items-center gap-x-6 border">
                 <img
                   class="h-16 w-16 rounded-full"
                   src="/assets/python-logo.png"
@@ -110,10 +108,70 @@
                   <h3
                     class="text-base font-semibold leading-7 tracking-tight text-indigo-600"
                   >
-                    Python
+                    Python 3.8
                   </h3>
                   <p class="text-sm font-semibold leading-6 text-gray-900">
-                    NumPy, Pandas, scikit-learn.
+                    Python
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex items-center gap-x-6 border">
+                <img
+                  class="h-16 w-16 rounded-full"
+                  src="/assets/numpy-logo.svg"
+                  alt=""
+                />
+                <div>
+                  <h3
+                    class="text-base font-semibold leading-7 tracking-tight text-indigo-600"
+                  >
+                    NumPy
+                  </h3>
+                  <p class="text-sm font-semibold leading-6 text-gray-900">
+                    NumPy
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex items-center gap-x-6 border">
+                <img
+                  class="h-16 w-16 rounded-full"
+                  src="/assets/pandas-logo.png"
+                  alt=""
+                />
+                <div>
+                  <h3
+                    class="text-base font-semibold leading-7 tracking-tight text-indigo-600"
+                  >
+                    Pandas
+                  </h3>
+                  <p class="text-sm font-semibold leading-6 text-gray-900">
+                    Pandas
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex items-center gap-x-6 border">
+                <img
+                  class="h-16 w-16 rounded-full"
+                  src="/assets/scikit-learn-logo.png"
+                  alt=""
+                />
+                <div>
+                  <h3
+                    class="text-base font-semibold leading-7 tracking-tight text-indigo-600"
+                  >
+                    scikit-learn
+                  </h3>
+                  <p class="text-sm font-semibold leading-6 text-gray-900">
+                    scikit-learn
                   </p>
                 </div>
               </div>
