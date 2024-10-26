@@ -3,10 +3,10 @@ html {
 }
 
 section {
-  height: 95vh;
   width: 100%;
 }
 
 #home {
+  height: 95vh;
   background-image: url("./assets/home-background.jpg");
 }
