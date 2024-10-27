@@ -4,6 +4,9 @@ html {
 
 section {
   width: 100%;
+}
+
+.division {
   height: 95vh;
 }
 
